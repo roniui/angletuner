@@ -1,0 +1,32 @@
+{
+  "short_name": "Angle Tuner",
+  "name": "Angle Tuner",
+  "description": "A free and accurate online angle measurement tool for your phone or browser.",
+  "display": "fullscreen",
+  "id": "/",
+  "scope": "/",
+  "start_url": "/",
+  "theme_color": "#6387a6",
+  "background_color": "#6387a6",
+  "icons": [
+    {
+      "src": "/images/icons/icon-512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/images/screenshots/screenshot-narrow.png",
+      "type": "image/png",
+      "sizes": "540x720",
+      "form_factor": "narrow"
+    },
+    {
+      "src": "/images/screenshots/screenshot-wide.png",
+      "type": "image/png",
+      "sizes": "720x540",
+      "form_factor": "wide"
+    }
+  ]
+}
