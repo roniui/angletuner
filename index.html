@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Angle Tuner</title>   
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+       <script src="script.js"></script>
+</head>
+<header>
+    <h2>Angle Tuner</h2>
+</header>
+<body>
+<div id="box">
+    <svg id="svg" viewBox="0 0 360 360" class="svg noselect">
+        <circle class="svg-scale-circle-middle" cx="180" cy="180" r="168"/>
+        <circle class="svg-scale-circle-outer" cx="180" cy="180" r="178"/>
+        <circle class="svg-scale-circle-inner" cx="180" cy="180" r="158"/>
+
+        <text class="svg-scale-text" x="12" y="180">180</text>
+        <text class="svg-scale-text" x="348" y="175">0</text>
+        <text class="svg-scale-text" x="348" y="185">360</text>
+        <text class="svg-scale-text" x="180" y="12">90</text>
+        <text class="svg-scale-text" x="180" y="348">270</text>
+        <text class="svg-scale-text" x="300" y="62">45</text>
+        <text class="svg-scale-text" x="60" y="62">135</text>
+        <text class="svg-scale-text" x="60" y="298">225</text>
+        <text class="svg-scale-text" x="300" y="298">315</text>
+
+        <circle class="svg-aux-circle" cx="180" cy="180" r="150"/>
+        <line class="svg-aux-line" x1="25" y1="180" x2="335" y2="180"/>
+        <line class="svg-aux-line" x1="25" y1="180" x2="335" y2="180" transform="rotate(45)"/>
+        <line class="svg-aux-line" x1="25" y1="180" x2="335" y2="180" transform="rotate(90)"/>
+        <line class="svg-aux-line" x1="25" y1="180" x2="335" y2="180" transform="rotate(135)"/>
+        <line class="svg-aux-base-line" x1="180" y1="180" x2="335" y2="180"/>
+
+        <circle id="arc" class="svg-arc-circle svg-animate" cx="180" cy="180" r="100"
+                stroke-dasharray="628.32" stroke-dashoffset="-628.32" opacity="0.5"/>
+
+        <circle id="arcOpposite" class="svg-arc-opposite-circle svg-animate" cx="180" cy="180" r="50"
+                stroke-dasharray="314.16" stroke-dashoffset="314.16" opacity="0"/>
+
+        <line id="pointerExtraLine" class="svg-pointer-extra-line svg-animate" x1="-1000" y1="180" x2="1000" y2="180"/>
+        <line id="pointerLine" class="svg-pointer-line svg-animate" x1="25" y1="180" x2="320" y2="180"/>
+
+        <path id="pointerMarker" class="svg-pointer-arrow svg-animate" d="M320,180l4,-4l20,4l-20,4Z"/>
+        <text id="arcText" class="svg-arc-text svg-animate" x="280" y="180"/>
+        <text id="arcOppositeText" class="svg-arc-opposite-text svg-animate" x="230" y="180" opacity="0"/>
+    </svg>
+    <div id="accelerometer-panel" style="display: none;">
+        <input id="accelerometer-checkbox" type="checkbox" disabled>
+        <label for="accelerometer-checkbox">Accelerometer</label>
+    </div>
+    <div id="angle-input-panel">
+       
+        <input id="angle-input" type="number" step="1" readonly>
+    <label for="angle-input">°</label>
+</div></div>
+
+<script>
+    init();
+</script>
+
+
+<div id="copy"> &copy; 2025 <a href="mailto:roniui.github.io@gmail.com">Angle Tuner</a></div>
+
+</body>
+</html>
