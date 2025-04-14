@@ -2,7 +2,7 @@
   "short_name": "Angle Tuner",
   "name": "Angle Tuner",
   "description": "A free and accurate online angle measurement tool for your phone or browser.",
-  "display": "fullscreen",
+  "display": "standalone",
   "start_url": "./",
   "theme_color": "#6387a6",
   "background_color": "#6387a6",
